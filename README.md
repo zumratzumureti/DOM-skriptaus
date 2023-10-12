@@ -2,7 +2,7 @@
 # dom-skriptaus
 Tein projektin yksin. Käytin muutamaa nettisivua ja katsoin videoita joista sain apua. Käytin kurssimateriaalia ja Chatgpt:ltä kysyin yksittäisiä kysymyksiä. Projektin tekemiseen kului yli viikon. Google developer toolsia tuli myös käytettyä. 
 
-Lähteet:  
+Lähteet:
 
 https://www.w3schools.com/ 
 https://www.youtube.com/watch?v=q0-N_w0Op84&t=688s
