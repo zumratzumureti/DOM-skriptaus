@@ -1,12 +1,108 @@
-<!DOCTYPE html>
+check my code: <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Document</title>
+    <title>Projekti 1 </title>
+
+    <style>
+      body {
+          font-family: 'Trebuchet MS';
+          font-size: medium;
+          font-style:normal;
+          background:radial-gradient(circle, #c5abf1, #7556a9);
+          display: flex;
+          align-items: center;
+          justify-content: center; 
+      }
+      .container {
+        text-align: center;
+      }
+      ul {
+          list-style-type: none;
+          padding: 0;
+      }
+    
+
+      li {
+          border: 1px #ffffff;
+          border-style:solid;
+          padding: 10px; 
+          margin: 5px 0;
+      }
+      li span {
+        padding-right:10px;
+      }
+
+      button {
+        background-color: #603e96;
+        color:rgb(255, 255, 255);
+        padding:6px 15px;
+
+      }
+      input[type="text"] {
+        width: 200px; /* Adjust the width as needed */
+        padding: 15px;
+        font-size: 20px;
+    }
+    header {
+      color:rgb(28, 12, 43);
+      padding: 5px;
+      font-size: larger;
+
+      
+    }
+  </style>
+
 </head>
 <body>
-    <h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa neque facere sapiente nesciunt, ut modi earum ratione nulla aut blanditiis exercitationem delectus hic placeat eos pariatur nobis. Maxime, officia eum!</h1>
+  <div class="container">
+    <h1> - TO DO LISTA - </h1>
+    <input type="text" id="taskInput" placeholder="Lisää tehtävä">
+    <button id="addTask">Lisää</button>
+    <ul id="taskList"></ul>
+</div>
+
+    <script>
+    
+      const taskInput = document.getElementById("taskInput");
+      const addTaskButton = document.getElementById("addTask");
+      const taskList = document.getElementById("taskList");
+
+      // lisää uusi tehtävä, funktio
+      function addTask() {
+          const taskText = taskInput.value.trim();
+          if (taskText !== " ") {
+              const taskItem = document.createElement("li");
+
+              // tehtäväpalkki
+              const taskTextSpan = document.createElement("span");
+              taskTextSpan.textContent = taskText;
+
+              // valmis- painike
+              const completeButton = document.createElement("button");
+              completeButton.textContent = "valmis";
+              completeButton.addEventListener("click", () => {
+                  taskTextSpan.style.textDecoration = "line-through";
+              });
+
+              // poista- painike
+              const deleteButton = document.createElement("button");
+              deleteButton.textContent = "poista";
+              deleteButton.addEventListener("click", () => {
+                  taskItem.remove();
+              });
+
+              taskItem.appendChild(taskTextSpan);
+              taskItem.appendChild(completeButton);
+              taskItem.appendChild(deleteButton);
+
+              taskList.appendChild(taskItem);
+              taskInput.value = " "; // syöttökenttä
+          }
+      }
+      addTaskButton.addEventListener("click", addTask);
+   ;
+  </script>
 </body>
 </html>
