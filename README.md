@@ -1,6 +1,6 @@
 # dom-skriptaus
 # dom-skriptaus
-Tein projektin yksin. Käytin muutamaa nettisivua ja katsoin videoita joista sain apua. Käytin kurssimateriaalia ja Chatgpt:ltä kysyin yksittäisiä kysymyksiä. Projektin tekemiseen kului yli viikon.  Google developer toolsia tuli myös käytettyä. 
+Tein projektin yksin. Käytin muutamaa nettisivua ja katsoin videoita joista sain apua. Käytin kurssimateriaalia ja Chatgpt:tä käytin lähinnä ongelmien ratkaisuun. Projektin tekemiseen kului yli viikon.  Google developer toolsia tuli myös käytettyä. 
 
 Lähteet:
 
@@ -11,3 +11,4 @@ https://javascript.plainenglish.io/how-to-create-a-todo-list-using-javascript-5e
 https://www.youtube.com/watch?v=W7FaYfuwu70&t=101s 
 https://docs.github.com/en/get-started/quickstart/create-a-repo 
 
+ 
