@@ -67,7 +67,7 @@
     
       const taskInput = document.getElementById("taskInput");
       const lisääTehtäväButton = document.getElementById("lisääTehtävä");
-      const tehtäväList = document.getElementById("taskList");
+      const taskList = document.getElementById("tehtäväList");
 
       // lisää uusi tehtävä, funktio
       function lisääTehtävä() {
@@ -81,17 +81,20 @@
 
               // valmis- painike
               const valmisButton = document.createElement("button");
-              valmis.textContent = "valmis";
+              valmisButton.textContent = "valmis";
               valmisButton.addEventListener("click", () => {
                   taskTextSpan.style.textDecoration = "line-through";
               });
 
               // poista- painike
               const poistaButton = document.createElement("button");
-              poista.textContent = "poista";
-              poista.addEventListener("click", () => {
+              poistaButton.textContent = "poista";
+              poistaButton.addEventListener("click", () => {
                   taskItem.remove();
               });
+            
+    
+    
 
               taskItem.appendChild(taskTextSpan);
               taskItem.appendChild(valmisButton);
@@ -102,7 +105,7 @@
           }
       }
       lisääTehtäväButton.addEventListener("click", lisääTehtävä);
-   ;
+   
   </script>
 </body>
 </html>
