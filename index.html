@@ -59,49 +59,49 @@
   <div class="container">
     <h1> - TO DO LISTA - </h1>
     <input type="text" id="taskInput" placeholder="Lisää tehtävä">
-    <button id="addTask">Lisää</button>
-    <ul id="taskList"></ul>
+    <button id="lisääTehtävä">Lisää</button>
+    <ul id="tehtäväList"></ul>
 </div>
 
     <script>
     
       const taskInput = document.getElementById("taskInput");
-      const addTaskButton = document.getElementById("addTask");
-      const taskList = document.getElementById("taskList");
+      const lisääTehtäväButton = document.getElementById("lisääTehtävä");
+      const tehtäväList = document.getElementById("taskList");
 
       // lisää uusi tehtävä, funktio
-      function addTask() {
+      function lisääTehtävä() {
           const taskText = taskInput.value.trim();
           if (taskText !== " ") {
               const taskItem = document.createElement("li");
 
-              // tehtäväpalkki
+              // tekstipalkki
               const taskTextSpan = document.createElement("span");
               taskTextSpan.textContent = taskText;
 
               // valmis- painike
-              const completeButton = document.createElement("button");
-              completeButton.textContent = "valmis";
-              completeButton.addEventListener("click", () => {
+              const valmisButton = document.createElement("button");
+              valmis.textContent = "valmis";
+              valmisButton.addEventListener("click", () => {
                   taskTextSpan.style.textDecoration = "line-through";
               });
 
               // poista- painike
-              const deleteButton = document.createElement("button");
-              deleteButton.textContent = "poista";
-              deleteButton.addEventListener("click", () => {
+              const poistaButton = document.createElement("button");
+              poista.textContent = "poista";
+              poista.addEventListener("click", () => {
                   taskItem.remove();
               });
 
               taskItem.appendChild(taskTextSpan);
-              taskItem.appendChild(completeButton);
-              taskItem.appendChild(deleteButton);
+              taskItem.appendChild(valmisButton);
+              taskItem.appendChild(poistaButton);
 
               taskList.appendChild(taskItem);
               taskInput.value = " "; 
           }
       }
-      addTaskButton.addEventListener("click", addTask);
+      lisääTehtäväButton.addEventListener("click", lisääTehtävä);
    ;
   </script>
 </body>

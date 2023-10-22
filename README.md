@@ -1,6 +1,6 @@
 # dom-skriptaus
 # dom-skriptaus
-Tein projektin yksin. Käytin muutamaa nettisivua ja katsoin videoita joista sain apua. Käytin kurssimateriaalia ja Chatgpt:ltä kysyin yksittäisiä kysymyksiä. Projektin tekemiseen kului yli viikon. Google developer toolsia tuli myös käytettyä. 
+Tein projektin yksin. Käytin muutamaa nettisivua ja katsoin videoita joista sain apua. Käytin kurssimateriaalia ja Chatgpt:ltä kysyin yksittäisiä kysymyksiä. Projektin tekemiseen kului yli viikon.  Google developer toolsia tuli myös käytettyä. 
 
 Lähteet:
 
